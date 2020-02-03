@@ -1,24 +1,62 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './App.css'
+import Table from './Table.js'
 
 function App() {
+  
+  const [tableData, setTableData] = useState({
+    columnNames : ['col1', 'col2', 'col3', 'col4', 'col5'],
+    tableEntries : [
+      {
+        col1 : 'entry1',
+        col2 : 'entry2',
+        col3 : 'entry3',
+        col4 : 'entry4',
+        col5 : 'entry5',
+      },
+      {
+        col1 : 'entry1',
+        col2 : 'entry2',
+        col3 : 'entry3',
+        col4 : 'entry4',
+        col5 : 'entry5',
+      },
+      {
+        col1 : 'entry1',
+        col2 : 'entry2',
+        col3 : 'entry3',
+        col4 : 'entry4',
+        col5 : 'entry5',
+      },
+      {
+        col1 : 'entry1',
+        col2 : 'entry2',
+        col3 : 'entry3',
+        col4 : 'entry4',
+        col5 : 'entry5',
+      },{
+        col1 : 'entry1',
+        col2 : 'entry2',
+        col3 : 'entry3',
+        col4 : 'entry4',
+        col5 : 'entry5',
+      }
+    ]
+  })
+
+  const [tableVisible, setTableVisible] = useState(true)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = 'App-link' >
+      
+        <span onClick = {() => setTableVisible(!tableVisible)}>
+          Toggle Table
+        </span>
+      </div>
+      {tableVisible &&
+        <Table tableData = {tableData} setTableVisible = {() => setTableVisible(!tableVisible)} />
+      }
     </div>
   );
 }
