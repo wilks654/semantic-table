@@ -5,37 +5,37 @@ import Table from './Table.js'
 function App() {
   
   const [tableData, setTableData] = useState({
-    columnNames : ['col1', 'col2', 'col3', 'col4', 'col5'],
+    columnNames : ['name', 'col2', 'col3', 'col4', 'col5'],
     tableEntries : [
       {
-        col1 : 'entry1',
+        name : 'name1',
         col2 : 'entry2',
         col3 : 'entry3',
         col4 : 'entry4',
         col5 : 'entry5',
       },
       {
-        col1 : 'entry1',
+        name : 'name1',
         col2 : 'entry2',
         col3 : 'entry3',
         col4 : 'entry4',
         col5 : 'entry5',
       },
       {
-        col1 : 'entry1',
+        name : 'name1',
         col2 : 'entry2',
         col3 : 'entry3',
         col4 : 'entry4',
         col5 : 'entry5',
       },
       {
-        col1 : 'entry1',
+        name : 'name1',
         col2 : 'entry2',
         col3 : 'entry3',
         col4 : 'entry4',
         col5 : 'entry5',
       },{
-        col1 : 'entry1',
+        name : 'name1',
         col2 : 'entry2',
         col3 : 'entry3',
         col4 : 'entry4',
