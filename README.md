@@ -15,15 +15,15 @@ Wherever you wish to install, from your terminal of choice run:
 
 ### `git clone https://github.com/wilks654/semantic-table.git`
 
-Downloads the repository
+Downloads the repository.
 
 ### `git install`
 
-Installs node_module dependencies
+Installs node_module dependencies.
 
 ### `npm start`
 
-To run the project from CRA's generated scripts
+To run the project from CRA's generated scripts.
 
 ## About
 
