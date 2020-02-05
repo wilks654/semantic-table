@@ -25,7 +25,7 @@ Installs node_module dependencies
 
 To run the project from CRA's generated scripts
 
-## About This Project
+## About
 
 A basic semantic table implemented in React using hooks to handle basic state logic.
 
