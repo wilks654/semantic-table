@@ -17,9 +17,9 @@ Wherever you wish to install, from your terminal of choice run:
 
 Downloads the repository.
 
-### `git install`
+### `npm install`
 
-Installs node_module dependencies.
+Installs node_module dependencies (run from project root dir).
 
 ### `npm start`
 
