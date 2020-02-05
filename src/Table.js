@@ -9,7 +9,6 @@ function Table(props) {
     //State, currently hovered table data cell
     const [highlightedCellCoordinates, setHighlightedCellCoordinates] = useState({ x : '' , y : '' })
 
-
     //MouseEnter/Leave table cell handlers
     let cellEnter = (x,y) => {
         setHighlightedCellCoordinates({x,y})

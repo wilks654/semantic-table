@@ -27,6 +27,6 @@ To run the project from CRA's generated scripts
 
 ## About
 
-A basic semantic table implemented in React using hooks to handle basic state logic.
+A semantic table implemented in React using hooks to handle basic state logic.
 
 Flair : table cells are conditionally highlighted if they are either a) currently hovered over, b) they are the first cell of a row where a cell is being hovered (excluding the header) or, c) they are the header name of a data cell currently being hovered.
