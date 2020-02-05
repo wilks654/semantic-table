@@ -1,27 +1,22 @@
-:root {
-  --primary : #282c34;
-  --secondary : #61dafb; 
-  --light : white;
-}
-
 .App {
   position: relative;
   background-color: #282c34;
   min-height: 100vh;
+  /*Center screen items*/
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: var(--light);
 }
 
+/*Position table toggle close to top of screen
+  Absolute positioning to ignore flex dictation (not to be centered)
+*/
 .App-link {
   position: absolute;
   top: 5%;
-  color: #61dafb;
-  border-color: #61dafb;
-  border-radius: 15px;
+  color: var(--secondary);
 }
 
 .App-link:hover {
@@ -30,6 +25,7 @@
 
 @media screen and ( max-height: 500px )
 {
+   /* hide link under 500px to prevent overlapping content */  
    .App-link {
      display:none;  
     }

@@ -1,10 +1,30 @@
 table {
     border-collapse: collapse;
+    width: 65%;
+    height: 65%;
 }
 
 table, th, td {
     border: 1px solid black;
     padding: 1em;
+}
+
+tbody {
+    max-width: 5em;
+}
+
+td {
+    max-width: 4em;
+    /* hide scroll bars */
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+td::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 tr:first-child {
