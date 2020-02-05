@@ -8,7 +8,6 @@
   --light : white;
 }
 
-
 /*
  Default CRA styles
 */
@@ -20,7 +19,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
