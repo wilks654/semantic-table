@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css'
 import Table from './Table.js'
 
-function App() {
+function App(props) {
   
   //Set initial state data
   //To mimic how a csv file might be destructured (Header and subsequent rows)
@@ -54,7 +54,12 @@ function App() {
     <div className="App">
       <div className = 'App-link' >
         {/* When clicked will hide/unhide table*/}
-        <span onClick = {() => setTableVisible(!tableVisible)}>
+        <span 
+          onClick = {() => {
+              setTableVisible(!tableVisible)
+            }
+          } 
+            data-testid = "table-toggle">
           Toggle Table
         </span>
       </div>

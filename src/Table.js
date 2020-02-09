@@ -44,7 +44,7 @@ function Table(props) {
 
     //Return a sementic table
     return (
-        <table id = "table">
+        <table id = "table"  data-testid = "table">
             <tbody>
                 {/* Table Header derived from props.tableHeader
                     takes an array and uses Array.map to output an array containing JSX
@@ -56,17 +56,16 @@ function Table(props) {
                                 className = {highlightedCellCoordinates.x === xIndex ? 'highlight' : ''} 
                                 onMouseEnter = {() => cellEnter(xIndex, '')} 
                                 onMouseLeave = {() => cellLeave()}>
-                                    {name}
+                                {name}
                             </th>)}
                         )
                     }
                 </tr>
-
                 {/* Generate Table rows containing table data
                  */}
                 {tableRows.map(
                     (row, yIndex) => {
-                        //generate rows JSX from props.tableRows
+                        /*generate rows JSX from props.tableRows*/
                         return (
                             <tr key = {yIndex + 1}>
                                 {/* return row JSX consisting of table data cells
@@ -77,7 +76,7 @@ function Table(props) {
                                                 onMouseEnter = {() => cellEnter(xIndex, yIndex)}
                                                 onMouseLeave = {() => cellLeave()}
                                             >
-                                                {entry}
+                                            {entry}
                                         </td>
                                     )
                                 })}
@@ -85,10 +84,8 @@ function Table(props) {
                         )
                     }
                 )} 
-
             </tbody>
         </table>
-
     );
 
 
